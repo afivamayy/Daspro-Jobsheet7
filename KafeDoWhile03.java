@@ -10,8 +10,11 @@ public class KafeDoWhile03 {
             System.out.print("Masukkan nama pelanggan (atau 'batal' untuk keluar): ");
             namaPelanggan = sc.nextLine();
 
-            if (namaPelanggan.equalsIgnoreCase("batal"))
+            if (namaPelanggan.equalsIgnoreCase("batal")) {
+                System.out.println("Transaksi dibatalkan");
                 break;
+            }
+
             System.out.print("Jumlah kopi: ");
             kopi = sc.nextInt();
             System.out.print("Jumlah teh: ");
@@ -21,9 +24,10 @@ public class KafeDoWhile03 {
 
             int total = (kopi * hargaKopi) + (teh * hargaTeh) + (roti * hargaRoti);
             System.out.println("Total harga: Rp " + total);
-            sc.nextLine();
+            sc.nextLine(); 
         } while (true);
 
+        System.out.println("Semua transaksi selesai");
         sc.close();
     }
 }
