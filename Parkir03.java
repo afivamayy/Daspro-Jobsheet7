@@ -8,10 +8,9 @@ public class Parkir03 {
         do {
             System.out.print("\nMasukkan jenis kendaraan (1=Mobil, 2=Motor, 0=Selesai): ");
             jenis = sc.nextInt();
-
             if (jenis == 0)
                 break;
-            System.out.print("Masukkan durasi parkir (jam): ");
+            System.out.print("Masukkan durasi parkir: ");
             durasi = sc.nextInt();
 
             int biaya;
